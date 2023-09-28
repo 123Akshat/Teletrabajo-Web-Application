@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Portal del Empleado</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<style>
+        
+    /* Apply bold Ubuntu font to navbar elements */
+    .navbar {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 12px; /* Adjust the font size as needed */
+        }
+
+        .navbar-brand {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold; /* Make the font bold */
+            font-size: 12px; /* Adjust the font size as needed */
+        }
+
+        .navbar-nav .nav-link {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold; /* Make the font bold */
+            font-size: 12px; /* Adjust the font size as needed */
+        }
+	
+    .navbar-nav.navbar-center {
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+    }
+
+    .navbar-nav .nav-item {
+    position: relative;
+    transition: color 0.5s;
+    }
+
+    .navbar-nav .nav-item::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0070ad; /* Change to your desired line color */
+    transition: width 0.3s;
+    }
+
+    .navbar-nav .nav-item:hover {
+    color: #0070ad; /* Change to your desired color */
+    }
+
+    .navbar-nav .nav-item:hover::before {
+    width: 100%;
+    }
+
+    .navbar-nav .nav-link.home:hover {
+      color: #0070ad; /* Change to your desired color for the Home button on hover */
+    }
+
+    .navbar-nav .nav-link.about:hover {
+      color: #0070ad; /* Change to your desired color for the About button on hover */
+    }
+
+    .navbar-nav .nav-link.services:hover {
+      color: #0070ad; /* Change to your desired color for the Services button on hover */
+    }
+
+    .navbar-nav .nav-link.contact:hover {
+      color: #0070ad; /* Change to your desired color for the Contact button on hover */
+    }
+
+    .btn {
+        padding: 5px 10px; /* Adjust the padding to change the button size */
+        font-size: 12px; /* Adjust the font size as needed */
+    }
+
+    /* Style for the heading with less opacity */
+    .semi-transparent-heading {
+        opacity: 0.5; /* Adjust the opacity value (0.0 to 1.0) */
+    }
+
+    /* Add CSS styles to shift the second column to the left */
+    .col-md-7 {
+        margin-left: 250px; /* Adjust the margin as needed */
+        position: relative;
+        top: -540px; /* Adjust the value as needed */
+    }
+
+    .btn {
+        background-color: #12ABDB; /* Change to the desired background color */
+        color: white; /* Set text color to make it readable on the new background */
+    }
+    
+	</style>
+</head>
+
+<body>
+	<!--NAVBAR STARTING-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light-tertiary">
+		<div class="container">
+			<a class="navbar-brand text-success" href="index.html">
+                <img src="./images/cg_logo.png" width="160" height="40">
+            </a>
+			<button class="navbar-toggler" type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse"
+				id="navbarSupportedContent">
+				<ul class=" nav navbar-nav navbar-center">
+					<li class="nav-item active">
+						<a class="nav-link home"
+						href="#">
+						Portal del Empleado
+						<span class="sr-only">
+							(current)
+						</span>
+					</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link about"
+						href="new.html">
+						Grupo Capgemini 
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link services"
+						href="#">
+						Capgemini España
+						</a>
+					</li>
+                    <li class="nav-item">
+						<a class="nav-link contact"
+						href="#">
+						Intranet
+						</a>
+					</li>
+                    <li class="nav-item">
+						<a class="nav-link contact"
+						href="#">
+						MyLearning 
+						</a>
+					</li>
+                    <li class="nav-item">
+						<a class="nav-link contact"
+						href="#">
+						MyConnect
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+    <!--Button-->
+
+    <p></p>
+    <div class="container">
+        <h3>Trabajo a Distancia</h3>
+
+        
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">Estado</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <!-- Dropdown items go here -->
+              <a class="dropdown-item" href="#">Todos</a>
+              <a class="dropdown-item" href="#">Pendiente Validar PRL</a>
+              <a class="dropdown-item" href="#">Pendiente Validar Res. Proyecto</a>
+              <a class="dropdown-item" href="#">Aprobadas</a>
+              <a class="dropdown-item" href="#">Rechazadas</a>
+              <a class="dropdown-item" href="#">Pendiente Validar RLT</a>
+              <a class="dropdown-item" href="#">Cerradas</a>
+            </div>
+
+        <button class="btn btn-primary">Nueva solicitud</button>
+        <button class="btn btn-primary">Normativa interna</button>
+        <button class="btn btn-primary">Exportar</button>
+        <hr>
+
+
+        <div class="row">
+            
+            <!-- First Column -->
+            <div class="col-md-3">
+                <!-- Heading with Less Opacity -->
+                <h3 class="semi-transparent-heading">Filtros</h3>
+                <!-- Additional content goes here -->
+                <div class="form">
+                    <form action="submit.php" method="post">    
+                        <div>
+                        <label for="blank1">Estado de la solicitud</label>
+                        <div>
+                        <input type="text" id="blank1" name="blank1" placeholder="Enter text here" required>
+                        </div>
+                        </div>
+                        <p></p>
+            
+                        <div>
+                        <label for="blank2">Solicitante</label>
+                        <div>
+                        <input type="text" id="blank2" name="blank2" placeholder="Enter text here" required>
+                        </div>
+                        </div>
+                        <p></p>
+            
+                        <div>
+                        <label for="blank3">código de proyecto</label>
+                        <div>
+                        <input type="text" id="blank3" name="blank3" placeholder="Enter text here" required>
+                        </div>
+                        </div>
+                        <p></p>
+            
+                        <div>
+                        <label for="blank4">Division</label>
+                        <div>
+                        <input type="text" id="blank4" name="blank4" placeholder="Enter text here" required>
+                        </div>
+                        </div>
+                        <p></p>
+            
+                        <div>
+                        <label for="blank5">BLA</label>
+                        <div>
+                        <input type="text" id="blank5" name="blank5" placeholder="Enter text here" required>
+                        </div>
+                        </div>
+                        <p></p>
+            
+                        <div>
+                        <label for="blank6">Une</label>
+                        <div>
+                        <input type="text" id="blank5" name="blank5" placeholder="Enter text here" required>
+                        </div>
+                        </div>
+                        <p></p>
+            
+                        <!-- Add even more blanks as needed -->
+                        
+                        <button class="btn btn-primary">Buscar</button>
+                        <button class="btn btn-primary">Limpiar Búsqueda</button>
+                    </form>
+                </div>
+            </div>
+    
+            
+            <!-- Second Column -->
+            <div class="col-md-9">
+                <!-- Heading with Less Opacity -->
+                <h3 class="semi-transparent-heading">Mis solicitudes</h3>
+                <!-- Additional content goes here -->
+                <!-- Content for the second column goes here -->
+                                    
+                    <div class="container">           
+                        <table class="table">
+                        <thead>
+                            <tr>
+                            <th>Fecha</th>
+                            <th>Solicitante</th>
+                            <th>Codigo</th>
+                            <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>22 jun. 2022</td>
+                            <td></td>
+                            <td>220</td>
+                            <td>Pendiente Validar RLT</td>
+                            </tr>
+                            <tr>
+                            <td>21 jun. 2023</td>
+                            <td></td>
+                            <td>251</td>
+                            <td>CERRADA</td>
+                            </tr>
+                            <tr>
+                            <td>28 jun. 2023</td>
+                            <td></td>
+                            <td>249</td>
+                            <td>Pendiente Validar RLT</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                                </div>
+                            </div>
+
+                    <!-- Additional content goes here -->
+
+    </div>
+    <p></p>
+
+   <!-- Link to Bootstrap JS and jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

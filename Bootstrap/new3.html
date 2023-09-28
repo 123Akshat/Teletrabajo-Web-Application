@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>New2</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<style>
+        
+    /* Apply bold Ubuntu font to navbar elements */
+    .navbar {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 12px; /* Adjust the font size as needed */
+        }
+
+        .navbar-brand {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold; /* Make the font bold */
+            font-size: 12px; /* Adjust the font size as needed */
+        }
+
+        .navbar-nav .nav-link {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold; /* Make the font bold */
+            font-size: 12px; /* Adjust the font size as needed */
+        }
+	
+    .navbar-nav.navbar-center {
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+    }
+
+    .navbar-nav .nav-item {
+    position: relative;
+    transition: color 0.5s;
+    }
+
+    .navbar-nav .nav-item::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0070ad; /* Change to your desired line color */
+    transition: width 0.3s;
+    }
+
+    .navbar-nav .nav-item:hover {
+    color: #0070ad; /* Change to your desired color */
+    }
+
+    .navbar-nav .nav-item:hover::before {
+    width: 100%;
+    }
+
+    .navbar-nav .nav-link.home:hover {
+      color: #0070ad; /* Change to your desired color for the Home button on hover */
+    }
+
+    .navbar-nav .nav-link.about:hover {
+      color: #0070ad; /* Change to your desired color for the About button on hover */
+    }
+
+    .navbar-nav .nav-link.services:hover {
+      color: #0070ad; /* Change to your desired color for the Services button on hover */
+    }
+
+    .navbar-nav .nav-link.contact:hover {
+      color: #0070ad; /* Change to your desired color for the Contact button on hover */
+    }
+
+    .btn {
+        padding: 5px 10px; /* Adjust the padding to change the button size */
+        font-size: 12px; /* Adjust the font size as needed */
+    }
+
+    /* Style for the heading with less opacity */
+    .semi-transparent-heading {
+        opacity: 0.5; /* Adjust the opacity value (0.0 to 1.0) */
+    }
+
+    /* Add CSS styles to shift the second column to the left */
+    .col-md-7 {
+        margin-left: 250px; /* Adjust the margin as needed */
+        position: relative;
+        top: -540px; /* Adjust the value as needed */
+    }
+
+    .btn {
+        background-color: #12ABDB; /* Change to the desired background color */
+        color: white; /* Set text color to make it readable on the new background */
+    }
+
+     /* Custom CSS to change label color */
+     .custom-label {
+            color: #12ABDB; /* Change the color to your desired color */
+        }
+
+     /* Custom CSS to change font color */
+  .pagination a.page-link {
+    color: #0070ad; /* Change 'red' to your desired font color */
+  }
+    
+    
+	</style>
+</head>
+
+<body>
+	<!--NAVBAR STARTING-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light-tertiary">
+		<div class="container">
+			<a class="navbar-brand text-success" href="index.html">
+                <img src="./images/cg_logo.png" width="160" height="40">
+            </a>
+			<button class="navbar-toggler" type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse"
+				id="navbarSupportedContent">
+				<ul class=" nav navbar-nav navbar-center">
+					<li class="nav-item active">
+						<a class="nav-link home"
+						href="portal.html">
+						Portal del Empleado
+						<span class="sr-only">
+							(current)
+						</span>
+					</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link about"
+						href="#">
+						Grupo Capgemini 
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link services"
+						href="#">
+						Capgemini España
+						</a>
+					</li>
+                    <li class="nav-item">
+						<a class="nav-link contact"
+						href="#">
+						Intranet
+						</a>
+					</li>
+                    <li class="nav-item">
+						<a class="nav-link contact"
+						href="#">
+						MyLearning 
+						</a>
+					</li>
+                    <li class="nav-item">
+						<a class="nav-link contact"
+						href="#">
+						MyConnect
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+    <!--Button-->
+
+    <p></p>
+    <div class="container">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"></li>
+              <li class="page-item"><a class="page-link" href="new.html">Solicitud</a></li>
+              <li class="page-item"><a class="page-link" href="new2.html">Evaluacion PRL</a></li>
+              <li class="page-item"><a class="page-link" href="new3.html">Evaluacion Resp. Proyecto</a></li>
+              <li class="page-item"><a class="page-link" href="#">Historico</a></li>
+              <li class="page-item"></li>
+            </ul>
+          </nav>
+        <h3 class="semi-transparent-heading">Solicitud de trabajo a distancia Pendiente Validar PRL - Codigo: 252</h3>
+        <label class="form-check-label custom-label" for="option2">Volver a la consulta</label>
+                <hr>
+                <h5 class="semi-transparent-heading">Solicitante</h5>
+
+                                
+                <div class="container">
+                    <table class="table">
+                      
+                      <tbody>
+                        <tr>
+                          <td>Division:</td>
+                          <td>FUNCIONES CANTRALES</td>
+                          <td>BLA/UNE:</td>
+                          <td>ITICS/ITICS</td>
+                        </tr>
+                        <tr>
+                          <td>Cliente/UNE:</td>
+                          <td>CARRERAS GRUPO LOGISTICO,S.A.</td>
+                          <td>Proyecto:</td>
+                          <td>100603851-2019_Ajuste Proyecto TBO</td>
+                        </tr>
+                        <tr>
+                          <td>Centro Trabajo:</td>
+                          <td>Alcobendas</td>
+                          <td>Dir. Centro Trabajo:</td>
+                          <td>C/de la Vega</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                    <button class="btn btn-primary">Aprobar</button>
+                    <button class="btn btn-primary">Rechazar</button>
+                    <p></p>
+
+    </div>  
+    </div>
+    
+    
+
+
+   <!-- Link to Bootstrap JS and jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
