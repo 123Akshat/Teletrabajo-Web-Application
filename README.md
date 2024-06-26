@@ -4,6 +4,7 @@
 
 ### Technologies Used
 - **Bootstrap**
+- **JavaScript** 
 - **UI/UX Design**
 
 ### Project Overview
